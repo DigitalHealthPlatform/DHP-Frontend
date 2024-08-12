@@ -5,6 +5,7 @@ import PasswordRecovery from './pages/password-recovery'
 import SignUp from './pages/signup'
 import Login from './pages/login'
 import Appointments from './pages/appointments'
+import AdminDashboard from './pages/admin-dashboard/components'
 
 function App() {
   const router = createBrowserRouter([
@@ -13,6 +14,7 @@ function App() {
     { path: "signup", element: <SignUp /> },
     { path: "login/password-recovery", element: <PasswordRecovery /> },
     { path: "appointments", element: <Appointments /> },
+    { path: "admin", element: <AdminDashboard /> },
 
     // {
     //   element: <AuthLayout />,

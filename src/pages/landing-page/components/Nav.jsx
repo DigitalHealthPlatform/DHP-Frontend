@@ -10,7 +10,7 @@ const Nav = () => {
           <div className="space-x-4">
             <Link to="/" className="text-black">Home</Link>
             <Link to="#" className="text-gray-700">About</Link>
-            <Link to="#" className="text-gray-700">Services</Link>
+            <Link to="appointments" className="text-gray-700">Appointments</Link>
             <Link to="#" className="text-gray-700">Contact</Link>
           </div>
         </div>
