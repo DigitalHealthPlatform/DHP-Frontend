@@ -1,11 +1,19 @@
 import React from 'react'
 
-const index = () => {
+import DoctorsPage from './components/DoctorsPage'
+
+
+
+const Appointments = () => {
   return (
     <div>
-        
+      {/* <Nav /> */}
+      <DoctorsPage />
+     
+      {/* <Footer /> */}
+    
     </div>
   )
 }
 
-export default index
+export default Appointments
