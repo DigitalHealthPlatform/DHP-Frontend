@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-teal-600 text-white py-6">
+    <footer className="bg-[#32C69A] text-white py-6">
       <div className="container mx-auto px-4 text-center md:text-left">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <a href="/" className="inline-block">
-              <img src="/path-to-logo.png" alt="Health Logo" className="h-10" />
+            <div  className="text-2xl font-bold">Tele-H</div>
             </a>
           </div>
           <div className="mb-4 md:mb-0">

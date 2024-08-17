@@ -2,15 +2,9 @@ import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-const DoctorCard = ({ name, bio, hours, calendarLink, email, phone, image }) => {
+const DoctorCard = ({ name, specialty, hours, calendarLink, email, phone, image, availableDates }) => {
   const [selectedDates, setSelectedDates] = useState([]);
   const [isBooking, setIsBooking] = useState(false);
-
-  const availableDates = [
-    new Date("2024-08-18"),
-    new Date("2024-08-19"),
-    new Date("2024-08-23"),
-  ]; // example of available dates
 
   const isDateAvailable = (date) => {
     return availableDates.some(
@@ -34,7 +28,7 @@ const DoctorCard = ({ name, bio, hours, calendarLink, email, phone, image }) => 
     <div className="flex items-center bg-white shadow-lg rounded-l-lg overflow-hidden">
       <div className="p-4 flex-1">
         <h2 className="text-xl font-semibold">{name}</h2>
-        <p className="text-gray-600">{bio}</p>
+        <p className="text-gray-600">{specialty}</p>
         <a href={`mailto:${email}`} className="text-blue-500 underline">
           {email}
         </a>
